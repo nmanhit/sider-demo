@@ -14,8 +14,26 @@ rules:
           ...
     trigger:
       - pattern:
+          regexp: (@click)((?!_handleClick).)*$
+        glob: "*.ts"
+      - pattern:
           regexp: (@change)((?!_handleChange).)*$
         glob: "*.ts"
       - pattern:
           regexp: (@focus)((?!_handleFocus).)*$
+        glob: "*.ts"
+      - pattern:
+          regexp: (@blur)((?!_handleBlur).)*$
+        glob: "*.ts"
+      - pattern:
+          regexp: (@keydown)((?!_handleKeyDown).)*$
+        glob: "*.ts"
+      - pattern:
+          regexp: (@mousedown)((?!_handleMouseDown).)*$
+        glob: "*.ts"
+      - pattern:
+          regexp: (@mouseover)((?!_handleMouseOver).)*$
+        glob: "*.ts"
+      - pattern:
+          regexp: (@mouseleave)((?!_handleMouseLeave).)*$
         glob: "*.ts"
