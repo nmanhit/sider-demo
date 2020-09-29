@@ -55,6 +55,4 @@ rules:
     glob:
       - "src/**/index.ts"
       - "src/mobile/**/index.ts"
-    exclude:
-      - src/dialog/index.ts
-      - src/notification/index.ts
+      - !("src/dialog/index.ts"|"src/notification/index.ts")
