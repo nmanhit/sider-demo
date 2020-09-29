@@ -54,5 +54,5 @@ rules:
       }
     glob:
       - "src/!(dialog|notification)/index.ts"
-      - "src/mobile/**/index.ts'"
+      - "src/mobile/**/index.ts"
 
