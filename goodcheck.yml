@@ -53,6 +53,6 @@ rules:
         return this.dispatchEvent(changeEvent);
       }
     glob:
-      - "src/!({dialog,notification})/index.ts'"
-      - "src/mobile/!({dialog,notification})/index.ts'"
+      - "src/!(dialog|notification)/index.ts'"
+      - "src/mobile/**/index.ts'"
 
