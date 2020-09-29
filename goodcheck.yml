@@ -52,7 +52,5 @@ rules:
         });
         return this.dispatchEvent(changeEvent);
       }
-    glob:
-      - "src/**/index.ts"
-      - "src/mobile/**/index.ts"
-      - !("src/dialog/index.ts"|"src/notification/index.ts")
+    glob: ['src/**/index.ts', 'src/mobile/**/index.ts', '!src/dialog/index.ts', '!src/notification/index.ts']
+
